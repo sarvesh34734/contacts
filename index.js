@@ -3,9 +3,12 @@ const path=require("path");
 // const port=8000;
 
 
+
+
 const db=require("./config/mongoose");
 const Contact=require("./models/contact")
 const app=express();
+app.set(port,(process.env.PORT || 5000));
 
 app.set("view engine","ejs");   //sets propertry of view engine to be ejs
 app.set("views",path.join(__dirname,"views"));  //set views to the folder views inside __dirname
