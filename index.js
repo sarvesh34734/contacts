@@ -8,7 +8,7 @@ const path=require("path");
 const db=require("./config/mongoose");
 const Contact=require("./models/contact")
 const app=express();
-app.set("port",(process.env.PORT || 5000));
+app.set('port',(process.env.PORT || 5000));
 
 app.set("view engine","ejs");   //sets propertry of view engine to be ejs
 app.set("views",path.join(__dirname,"views"));  //set views to the folder views inside __dirname
@@ -137,10 +137,10 @@ app.get("/view-contacts",function(req,res){
 
 
 
-app.listen(port,function(err){
+app.listen(app.get('port'),function(err){
 
     if(err){console.log("There is an error running the server "+err)}
     
-    console.log("Hola! The server is up and running on port "+port)
+    console.log("Hola! The server is up and running on port "+app.get('port'))
 
 })
