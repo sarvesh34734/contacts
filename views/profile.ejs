@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <%=  title %>
+        </title>
+    </head>
+    <body>
+        <h1> Your profile was accessed by someone</h1>
+        <!-- loop inside html using ejs template engine -->
+        <%for (let i=1;i<=6;i++){%>
+
+            <li>
+                <%= i %>
+            </li>
+
+            <%}%>
+
+        <!-- if else conditional statements inside html -->
+        <% if(true){%>
+            <p>the value is true</p> 
+        <% }else{ %>
+            <p> its false. Better luck next time.
+        <% } %>
+    </body>
+</html>

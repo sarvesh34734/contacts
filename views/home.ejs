@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+    </head>
+    <body>
+
+        <div class="main">
+
+            <div class="heading">
+
+                <span class="icon"><a href="/view-contacts" class="decor"><i class="far fa-address-book"></i></a></span>
+                <span class="heading__head">Create Contact</span>
+    
+            </div>
+
+            <div class="form">
+
+                <form action="/create-contact" method="POST">
+                    <div>
+                        <i class="mln fas fa-user"></i>
+                         <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div >
+                        <i class="mln fas fa-mobile-alt"></i>
+                        <input type="number" name="phone" placeholder="Enter phone number" required>
+                    </div>
+                    <div>
+                        <button class="mt btn" type="submit" name="action" value="update">create contact</button>
+                        <!-- <button formaction="" class="mt btn" type="submit" name="action" value="visit">view contact</button> -->
+                    </div>
+                
+                
+                </form>
+
+            </div>
+
+        </div>
+        
+        
+        
+        
+
+
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <%= wall%>
+        </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1>Your Contacts</h1>
+            </div>
+            <div class="contact__container">
+                <% for(let i of contact_list){%>
+
+                    <div class="contact__container--element">
+                        <p><i class="mr fas fa-user"></i><%= i.name %></p>
+                        <p><i class="mr fas fa-mobile-alt"></i><%= i.phone %></p>
+                        <div class="trash">
+                            <!-- a tag always sends get requests by default -->
+                            <a href="/delete-contact/<%= i._id %>" id="trash" class="nf"><i class="abs far fa-trash-alt"></i></a>
+                            <!-- for query selector the syntax would be like this -->
+                            <!-- <a href="/delete-contact/?phone=<%= i.phone %>& name=<%= i.name %>" id="trash" class="nf"><i class="abs far fa-trash-alt"></i></a> -->
+
+                        </div>
+                       
+                    </div>
+                    
+
+                <% } %>
+            </div>
+            <div class="back__button">
+                <a href="/home" class="back__button--home">Back to Home</a>
+            </div>
+
+        </div>
+
+        <script type="text/javascript"></script>
+    </body>
+</html>

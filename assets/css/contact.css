@@ -1,0 +1,108 @@
+*
+{
+    margin:none;
+    padding: none;
+}
+html{
+    font-size: 62.5%;
+    color:white;
+    font-family: sans-serif;
+    /* height: 100%; */
+}
+
+body{
+
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right,teal,olive) fixed;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    color:white;
+    /* min-height: 100%; */
+}
+.main
+{
+    padding:2.5rem ;
+    position:relative;
+}
+.header
+{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 7rem;
+}
+
+.contact-container
+{
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+.contact__container--element
+{
+    position: relative;
+    display: inline-block;
+    width:18%;
+    min-width: 16.5rem;
+    font-size: 2rem;
+    color:white;
+    margin: 2rem;
+    padding: 1.2rem 2rem;
+    border:solid 1px white;
+    border-radius: 2rem;
+}
+.trash
+{
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    opacity:0;
+}
+.contact__container--element p{
+    margin-bottom: 1.6rem ;
+}
+.contact__container--element:hover{
+    filter:brightness(90%);
+    box-shadow: 0 1.5rem 3rem rgba(#000,.15);
+}
+.contact__container--element:hover .trash{
+    opacity:1;
+}
+.mr 
+{
+    margin-right: 2rem;
+}
+.nf{
+
+    color:white;
+    text-decoration: none;
+
+}
+.nf:focus{
+    outline:none !important;
+}
+
+.back__button
+{
+    margin-top:5rem;
+    text-align: center;
+    width:18rem;
+    padding:1.5rem 2rem;
+    border:1px solid white;
+    margin-left: 40%;
+    border-radius: 500px;
+    transition: all .2s ease-in-out;
+    
+}
+.back__button--home
+{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+}
+.back__button:hover{
+    filter:brightness(95%);
+    transform: translateY(-.5rem);
+}
