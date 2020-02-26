@@ -4,7 +4,7 @@
   "description": "a contact list to learn express js as a framework",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon index.js",
+    "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sarvesh vyas",
@@ -13,5 +13,7 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "mongoose": "^5.9.2"
-  }
+  },
+  "engines":{"node":"12.15.0"}
+  
 }
